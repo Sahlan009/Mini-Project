@@ -1,0 +1,92 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar {
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: blod;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: black;
+    width: 100%;
+    line-height: 50px;
+}
+
+.about {
+    padding: 50px;
+    margin: 50px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Gambar/Tegal_Panjang-min-scaled.jpg);
+    color: white;
+    height: 600px;
+
+}
+
+.card {
+    border: none;
+    outline: none;
+    transition: tranform .3s;
+}
+
+
+footer {
+    background-color: #787A91;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer-form {
+    padding: 20px;
+    margin: 0px 50px 0px 50px;
+
+}

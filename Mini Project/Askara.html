@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Askara</title>
+    <link rel="shortcut icon" href="sunglasses.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .banner {
+            height: 600px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Gambar/Tegal_Panjang-min-scaled.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .banner-content {
+            height: 100%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .diskon {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        } 
+        img.gunung {
+            border: none;
+            outline: none;
+            border-radius: 20px;
+        }
+
+        img.img-modal {
+            width: 350px;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+            transition: transform .3s;
+        }
+
+        .kirim {
+            float: right;
+        }
+
+        .kontak {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light opacity-75 fixed-top" style="--bs-breadcrumb-divider: '';"
+        aria-label="breadcrumb">
+        <div class="container-fluid">
+            <div class="logo" style="color: black;">Askara</div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="breadcrumb navbar-nav ms-auto ms-auto mb-2 mb-lg-0">
+                    <li class="breadcrumb-item">
+                        <a class="breadcrumb-item active" aria-current="page" href="Askara.html">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a class="breadcrumb-item" href="AbousUs.html">About Us</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a class="breadcrumb-item" href="#product">Product</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a class="breadcrumb-item" href="#footer">Kritik & Saran</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Navbar -->
+
+    <!-- Banner -->
+    <div class="container-fluid banner">
+        <div class="container banner-content col-lg-6">
+            <div class="text-center">
+                <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+                    Kami Punya Penawaran Spesial Untuk Anda ! <a href="#diskon">Klik Disini</a>.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                <p class="fs-1">
+                    Selamat Datang di Askara !
+                    <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis et alias
+                        quod nesciunt illo iusto
+                        laudantium sed aperiam nulla quidem?</p>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End of banner -->
+
+
+    <!-- corousel -->
+    <div class="container-fluid carousel-contain py-5">
+        <div class="container">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./Gambar/camp2-1.jpg" class="gunung d-block w-100">
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h5>First slide label</h5>
+                            <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Gambar/camp4-1.jpg" class="gunung d-block w-100">
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h5>Second slide label</h5>
+                            <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Gambar/camp7-1.jpg" class="gunung d-block w-100">
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h5>Third slide label</h5>
+                            <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- end of carousel -->
+
+    <!-- Diskon -->
+    <div class="card bg-dark text-white col-lg-4 offset-4" id="diskon">
+        <img src="./Gambar/Tegal_Panjang-min-scaled.jpg" class="card-img" alt="...">
+        <div class="diskon card-img-overlay">
+            <h3 class="card-title text-center">DISKON 30% UNTUK KALIAN DI AWAL TAHUN INI.</h3>
+        </div>
+    </div>
+    <!-- End of Diskon -->
+
+    <!-- cards mountain -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" id="product">Gunung</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card shadow-lg rounded">
+                        <img src="./Gambar/guntur-edit.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Guntur</h5>
+                            <p><b>Rp,700.000,-</b></p>
+                            <p class="text-decoration-line-through">Rp,1.000.000.-</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm rounded-0 float-end"
+                                data-bs-toggle="modal" data-bs-target="#modalGuntur">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card shadow-lg rounded">
+                        <img src="./Gambar/Papandayan-edit.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Papandayan</h5>
+                            <p><b>Rp,700.000,-</b></p>
+                            <p class="text-decoration-line-through">Rp,1.000.000.-</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm rounded-0 float-end"
+                                data-bs-toggle="modal" data-bs-target="#modalPapandayan">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card shadow-lg rounded">
+                        <img src="./Gambar/cikuray-edit.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Cikuray</h5>
+                            <p><b>Rp,700.000,-</b></p>
+                            <p class="text-decoration-line-through">Rp,1.000.000.-</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm rounded-0 float-end"
+                                data-bs-toggle="modal" data-bs-target="#modalCikuray">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of cards mountain -->
+
+    <!-- cards camp -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Bukit</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card shadow-lg rounded">
+                        <img src="./Gambar/karacak-edit.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Karacak Valley</h5>
+                            <p><b>Rp,700.000,-</b></p>
+                            <p class="text-decoration-line-through">Rp,1.000.000.-</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm rounded-0 float-end"
+                                data-bs-toggle="modal" data-bs-target="#modalKaracak">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card shadow-lg rounded">
+                        <img src="./Gambar/sagara-edit.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Sagara</h5>
+                            <p><b>Rp,700.000,-</b></p>
+                            <p class="text-decoration-line-through">Rp,1.000.000.-</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm rounded-0 float-end"
+                                data-bs-toggle="modal" data-bs-target="#modalSagara">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card shadow-lg rounded">
+                        <img src="./Gambar/buffalo-hills-edit.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Bufallo Hills</h5>
+                            <p><b>Rp,700.000,-</b></p>
+                            <p class="text-decoration-line-through">Rp,1.000.000.-</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm rounded-0 float-end"
+                                data-bs-toggle="modal" data-bs-target="#modalBufallo">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of cards camp -->
+
+    <!-- cards patai -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Pantai</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card shadow-lg rounded">
+                        <img src="./Gambar/sayang-heulang.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Sayang Heulang</h5>
+                            <p><b>Rp,700.000,-</b></p>
+                            <p class="text-decoration-line-through">Rp,1.000.000.-</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm rounded-0 float-end"
+                                data-bs-toggle="modal" data-bs-target="#modalSayang">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card shadow-lg rounded">
+                        <img src="./Gambar/pantai-santolo.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Santolo</h5>
+                            <p><b>Rp,700.000,-</b></p>
+                            <p class="text-decoration-line-through">Rp,1.000.000.-</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm rounded-0 float-end"
+                                data-bs-toggle="modal" data-bs-target="#modalSantolo">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card shadow-lg rounded">
+                        <img src="./Gambar/pantai-manalusu.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Manalusu</h5>
+                            <p><b>Rp,700.000,-</b></p>
+                            <p class="text-decoration-line-through">Rp,1.000.000.-</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm rounded-0 float-end"
+                                data-bs-toggle="modal" data-bs-target="#modalManalusu">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of cards pantai -->
+
+    <!-- modal gunung-->
+    <div class="modal fade" id="modalGuntur">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Detail</h5>
+                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./Gambar/guntur-edit.jpg" class="img-modal" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm me-md-4" data-bs-dismiss="modal">Tutup
+                    </button>
+                    <button class="btn btn-success btn-lg" data-bs-dismiss="modal">Tambah<svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPapandayan">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Detail</h5>
+                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./Gambar/Papandayan-edit.jpg" class="img-modal" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm me-md-4" data-bs-dismiss="modal">Tutup
+                    </button>
+                    <button class="btn btn-success btn-lg" data-bs-dismiss="modal">Tambah <svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCikuray">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Detail</h5>
+                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./Gambar/cikuray-edit.jpg" class="img-modal" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm me-md-4" data-bs-dismiss="modal">Tutup
+                    </button>
+                    <button class="btn btn-success btn-lg" data-bs-dismiss="modal">Tambah <svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal bukit -->
+    <div class="modal fade" id="modalSagara">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Detail</h5>
+                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./Gambar/sagara-edit.jpg" class="img-modal" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm me-md-4" data-bs-dismiss="modal">Tutup
+                    </button>
+                    <button class="btn btn-success btn-lg" data-bs-dismiss="modal">Tambah <svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalKaracak">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Detail</h5>
+                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./Gambar/karacak-edit.jpg" class="img-modal" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm me-md-4" data-bs-dismiss="modal">Tutup
+                    </button>
+                    <button class="btn btn-success btn-lg" data-bs-dismiss="modal">Tambah <svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalBufallo">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Detail</h5>
+                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./Gambar/buffalo-hills-edit.jpg" class="img-modal" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm me-md-4" data-bs-dismiss="modal">Tutup
+                    </button>
+                    <button class="btn btn-success btn-lg" data-bs-dismiss="modal">Tambah <svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of modal bukit -->
+    <!-- modal pantai -->
+    <div class="modal fade" id="modalSayang">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Detail</h5>
+                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./Gambar/sayang-heulang.jpg" class="img-modal" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm me-md-4" data-bs-dismiss="modal">Tutup
+                    </button>
+                    <button class="btn btn-success btn-lg" data-bs-dismiss="modal">Tambah <svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalSantolo">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Detail</h5>
+                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./Gambar/pantai-santolo.jpg" class="img-modal" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm me-md-4" data-bs-dismiss="modal">Tutup
+                    </button>
+                    <button class="btn btn-success btn-lg" data-bs-dismiss="modal">Tambah <svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalManalusu">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Detail</h5>
+                    <button class="btn-close " data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./Gambar/pantai-manalusu.jpg" class="img-modal" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm me-md-4" data-bs-dismiss="modal">Tutup
+                    </button>
+                    <button class="btn btn-success btn-lg" data-bs-dismiss="modal">Tambah <svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z" />
+                            <path
+                                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of modal pantai -->
+    <!-- footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-form col-6">
+            <h4>Kririk & Saran</h4>
+            <div class="mb-1 mt-3 col-6">
+                <input type="text" class="form-control" placeholder="masukan nama anda disini ... ">
+            </div>
+            <div class="mb-1 mt-3 col-6">
+                <input type="email" class="form-control" placeholder="masukan alamat e-mail anda disini ... ">
+            </div>
+            <div class="mb-1 mt-3">
+                <textarea class="form-control" rows="3" placeholder="tulis kritik dan saran anda disini ..."></textarea>
+            </div>
+            <button type="button" class="kirim btn btn-primary btn-sm mt-2">Kirim</button>
+        </div>
+
+        <div class="kontak footer-form justify-content-sm-evenly mt-2 ">
+            <p>
+                <i class="fas fa-home mr-3"><a href="#"><img src="instagram.svg"></a></i> Instagram
+            </p>
+            <p>
+                <i class="fas fa-home mr-3"><a href="#"><img src="facebook.svg"></a></i> Facebook
+            </p>
+            <p>
+                <i class="fas fa-home mr-3"><a href="#"><img src="twitter.svg"></a></i> Twitter
+            </p>
+            <p>
+                <i class="fas fa-home mr-3"><a href="#"><img src="whatsapp.svg"></a></i> Whatsapp
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
